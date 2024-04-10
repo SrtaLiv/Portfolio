@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from "./components/Navbar/Navbar.js";
+import React, { useContext} from 'react';
+import './style.scss';
+import { DarkModeContext } from "./context/darkModeContext";
+import Inicio from './components/Inicio/Inicio.js';
+import Proyectos from './components/Proyectos/Proyectos.js';
+import Tecnologias from './components/Tecnologias/Tecnologias.js';
 
+
+//browserroute rnos permite
 function App() {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`theme-${darkMode ? "dark" : "light"}`}>
+      <Nav />
+      <Inicio />
+      <Proyectos/>
+      <Tecnologias/>
     </div>
   );
 }

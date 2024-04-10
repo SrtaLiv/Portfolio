@@ -1,0 +1,28 @@
+
+h1{
+    color: pink;
+    font-size: 10rem;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rebeccapurple;
+    scrollbar-color: pink purple;
+    overflow-y: scroll;
+
+}
+
+.cursor{
+    background-color: #111;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
