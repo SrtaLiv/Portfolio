@@ -4,11 +4,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { DarkModeContextProvider } from "./context/darkModeContext";
 
+// Importar los componentes necesarios de FontAwesome
+import { faTwitter, faFontAwesome, faInstagram, faXTwitter, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core';
+library.add(faTwitter, faFontAwesome, faInstagram, faXTwitter, faLinkedinIn, faGithub)
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <DarkModeContextProvider>
       <App />
+
     </DarkModeContextProvider>
   </React.StrictMode>
 );

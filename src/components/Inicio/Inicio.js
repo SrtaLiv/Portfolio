@@ -6,18 +6,13 @@ import { text } from '@fortawesome/fontawesome-svg-core';
 function Inicio() {
     return (
         <div className='inicio'>
-            <h1>Ana Olivia Todesco</h1>
-            <h2> Full Stack Developer</h2>
+            <h1>Hola, soy<span> Olivia Todesco</span></h1>
+            <h2>Desarrollo aplicaciones de software</h2>
+            <h2>Full Stack developer</h2>
+
             <a href='/about'>Leer mas sobre mi →</a>
 
-            {/* <motion.div
-                className='cursor'
-                variants={variants}
-                initial="default"
-                animate={cursorVariant}
-            /> */}
-
-            <a href='https://www.youtube.com/watch?v=nr3U-RpaQuM&ab_channel=CandDev'>ME QUEDE EN MINUTO 10:38</a>
+            <img alt="Abre foto de perfil" draggable="true" src="https://pbs.twimg.com/profile_images/1770285890998296576/UJM16-fy_200x200.jpg" />
         </div>
     )
 }

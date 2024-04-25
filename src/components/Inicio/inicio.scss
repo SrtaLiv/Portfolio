@@ -1,28 +1,33 @@
-
-h1{
-    color: pink;
-    font-size: 10rem;
-}
-
+@import "../../style.scss";
 .inicio{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: rebeccapurple;
-    scrollbar-color: pink purple;
-    overflow-y: scroll;
+    //background-color: rebeccapurple;
+    //scrollbar-color: pink purple;
+    //overflow-y: scroll;
+@include themify($themes) {
+    background-color: themed("bg");
 
-}
-
-.cursor{
-    background-color: #111;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
+    h1{
+        color: themed("textColor");
+        font-size: 10rem;
+        span{
+            color: $primary;
+        }
+    }
+    
+    h2{
+        color: themed("textColor");
+    }
+       
+    img{
+        width: 100px;
+        height: 100px;
+        border: 0px solid;
+        border-radius: 102px;
+    }
+    }
 }
