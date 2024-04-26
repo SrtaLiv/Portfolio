@@ -1,3 +1,4 @@
+//  LIGHT AND DARK MODE 
 $themes: (
   light: (
     textColor: #353534,
@@ -17,10 +18,6 @@ $themes: (
   ),
 );
 
-$primary : #417e5c;
-*{
-  font-family: Playfair Display;
-}
 
 @mixin themify($themes) {
   @each $theme, $map in $themes {
@@ -54,4 +51,53 @@ $primary : #417e5c;
   @media (max-width: 960px) {
     @content;
   }
+}
+
+//Basic
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+
+*{
+  font-family: Playfair Display;
+}
+
+//Colours
+$primary : #417e5c;
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --hue: 174;
+  --sat: 63%;
+
+  --first-color: hsl(var(--hue), var(--sat), 40%);
+  --first-color-alt: hsl(var(--hue), var(--sat), 36%);
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color: hsl(var(--hue), 8%, 35%);
+  --body-color: hsl(var(--hue), 100%, 99%);
+  --container-color: #FFF;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Open Sans', sans-serif;
+
+  --h1-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+  --tiny-font-size: .625rem;
+
+  // Responsive typography
+  @media screen and (min-width: 968px){
+      --h1-font-size: 2.25rem;
+      --normal-font-size: 1rem;
+  }
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }

@@ -6,7 +6,7 @@ import { text } from '@fortawesome/fontawesome-svg-core';
 function Inicio() {
     return (
         <div className='inicio'>
-            <h1>Hola, soy<span> Olivia Todesco</span></h1>
+            <h1>Hola! soy<span> Ana Olivia Todesco</span></h1>
             <h2>Desarrollo aplicaciones de software</h2>
             <h2>Full Stack developer</h2>
 
