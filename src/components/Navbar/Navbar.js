@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { DarkModeContext } from "../../context/darkModeContext";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-scroll';
 
 import "./navbar.scss";
@@ -20,18 +19,21 @@ function Nav() {
                     <ul className='nav-list'>
                         <li className='nav-item'>
                             <Link to="inicio" smooth={true} duration={500}>
+                                <FontAwesomeIcon className='nav-icon' icon="fa-solid fa-house" />
                                 <a className='nav-link'>Inicio</a>
                             </Link>
                         </li>
 
                         <li className='nav-item'>
                             <Link to='proyecto'>
+                                <FontAwesomeIcon className='nav-icon' icon="fa-solid fa-diagram-project" />
                                 <a className='nav-link'>Proyectos</a>
                             </Link>
                         </li>
 
                         <li className='nav-item'>
                             <Link to='tecnologias-container'>
+                                <FontAwesomeIcon className='nav-icon' icon="fa-solid fa-heart" />
                                 <a className='nav-link'>Sobre mi</a>
                             </Link>
                         </li>
@@ -40,9 +42,9 @@ function Nav() {
                 </div>
 
                 <div className='nav-item'>{darkMode ? (
-                    <FontAwesomeIcon onClick={toggle} icon={faSun} />
+                    <FontAwesomeIcon onClick={toggle} icon="fa-solid fa-sun" />
                 ) : (
-                    <FontAwesomeIcon onClick={toggle} icon={faMoon} />
+                    <FontAwesomeIcon onClick={toggle} icon="fa-solid fa-moon" />
                 )}
                 </div>
 

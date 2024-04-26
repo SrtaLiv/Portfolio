@@ -1,7 +1,10 @@
+@import "../../style.scss";
+
 // Estilos para el componente Proyectos
 .tecnologias-container{
-    height: 50vh;
-    background-color: #c1c1c1;
+    height: 100vh;
+    @include themify($themes) {
+    background-color: themed("bg2");
 }
 
 
@@ -16,4 +19,6 @@
 img{
     width: 40px;
     height: 40px;
+}
+
 }

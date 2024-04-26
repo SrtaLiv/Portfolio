@@ -18,6 +18,7 @@ function Tecnologias() {
             Si te gustaria saber mas sobre mi podes contactarte. Muchas gracias por pasarte por aquí.hacer algo como un copy email
 
             </p>
+            
             <div className='tecnologias'>
                { tecnologiasData.map(tecnologia=> (
                     <div key={tecnologia.id}>
