@@ -19,22 +19,28 @@ function Nav() {
                     <ul className='nav-list'>
                         <li className='nav-item'>
                             <Link to="inicio" smooth={true} duration={500}>
-                                <FontAwesomeIcon className='nav-icon' icon="fa-solid fa-house" />
-                                <a className='nav-link'>Inicio</a>
+                                <a className='nav-link'>
+                                    <FontAwesomeIcon className='nav-icon' icon="fa-solid fa-house" />
+                                    Inicio
+                                </a>
                             </Link>
                         </li>
 
                         <li className='nav-item'>
                             <Link to='proyecto'>
-                                <FontAwesomeIcon className='nav-icon' icon="fa-solid fa-diagram-project" />
-                                <a className='nav-link'>Proyectos</a>
+                                <a className='nav-link'>
+                                    <FontAwesomeIcon className='nav-icon' icon="fa-solid fa-diagram-project" />
+                                    Proyectos
+                                </a>
                             </Link>
                         </li>
 
                         <li className='nav-item'>
                             <Link to='tecnologias-container'>
-                                <FontAwesomeIcon className='nav-icon' icon="fa-solid fa-heart" />
-                                <a className='nav-link'>Sobre mi</a>
+                                <a className='nav-link'>
+                                    <FontAwesomeIcon className='nav-icon' icon="fa-solid fa-heart" />
+                                    Sobre mi
+                                </a>
                             </Link>
                         </li>
 

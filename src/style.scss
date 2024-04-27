@@ -8,6 +8,7 @@ $themes: (
     bgSoft: #f6f3f3,
     textColorSoft: #555,
     border: lightgray,
+    primary : #417e5c
   ),
   dark: (
     textColor: whitesmoke,
@@ -17,6 +18,7 @@ $themes: (
     bgSoft: #333,
     textColorSoft: lightgray,
     border: #444,
+    primary : #52ad7b
   ),
 );
 
@@ -55,7 +57,19 @@ $themes: (
   }
 }
 
-//Basic
+//ESTILOS GENERALES
+
+*{
+  font-family: Playfair Display;
+}
+
+html{
+  overflow: scroll;
+  scrollbar-color: rgb(0, 0, 0) rgb(55, 55, 55);
+  scrollbar-width: 29px;
+  overflow-x: hidden;
+}
+
 ul{
   list-style: none;
 }
@@ -64,12 +78,10 @@ a{
 }
 
 
-*{
-  font-family: Playfair Display;
-}
+//COLORES
 
-//Colours
-$primary : #417e5c;
+
+
 
 /*=============== VARIABLES CSS ===============*/
 :root{

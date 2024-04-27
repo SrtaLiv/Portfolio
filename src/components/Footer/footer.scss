@@ -1,11 +1,18 @@
+@import "../../style.scss";
+
 footer{
     height: 100px;    
-    
+    position: static;
+    bottom: 0;
     
     .icons-footer{
         display: flex;
         gap: 20px;
-        vertical-align: baseline;
         justify-content: center;
+        
+        a{
+            display: flex;
+            justify-content: center;
+        }
     }
 }

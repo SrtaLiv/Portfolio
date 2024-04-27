@@ -34,6 +34,11 @@ const tecnologiasData = [
         id: 7,
         titulo: 'SASS',
         imagenUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png',
+    },
+    {
+        id: 8,
+        titulo: 'Spring Boot',
+        imagenUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqyq-9lQQNZE9gQKIw_Vgl3_tBEmypLFSGiZQFCxO97g&s'
     }
 ];
 

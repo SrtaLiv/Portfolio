@@ -5,9 +5,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    //background-color: rebeccapurple;
-    //scrollbar-color: pink purple;
-    //overflow-y: scroll;
+//   
 @include themify($themes) {
     background-color: themed("bg");
 
@@ -15,7 +13,7 @@
         color: themed("textColor");
         font-size: --h1-font-size;
         span{
-            color: $primary;
+            color: themed("primary");
         }
     }
     
@@ -28,6 +26,11 @@
         height: 100px;
         border: 0px solid;
         border-radius: 102px;
+    }
+
+    span{
+        color: themed("primary");
+        font-weight: bold;
     }
     }
 }

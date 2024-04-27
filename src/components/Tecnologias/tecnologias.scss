@@ -2,23 +2,28 @@
 
 // Estilos para el componente Proyectos
 .tecnologias-container{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+    padding: 2em;
     @include themify($themes) {
     background-color: themed("bg2");
-}
 
+    .tecnologias {
+        display: flex;
+        gap: 20px;
 
-
-.tecnologias {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-
-}
-
-img{
-    width: 40px;
-    height: 40px;
-}
-
+        img{
+            width: 40px;
+            height: 40px;
+            @include mobile{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    }
 }
