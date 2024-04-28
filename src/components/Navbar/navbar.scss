@@ -84,3 +84,22 @@ header{
   
 }
 
+.cssanimation, .cssanimation span {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.rotateXIn { animation-name: rotateXIn }
+@keyframes rotateXIn {
+  0% {
+      transform: translate(-40px, 0px);
+      opacity: 0;
+  }
+  50% { transform: translate(40px, 0px) }
+}
+
+.rotateXIn:hover {
+  animation-name: rotateXIn;
+}

@@ -13,8 +13,10 @@ function Nav() {
     return (
         <header>
             <nav className='nav container'>
-                <a className="nav-logo" href='#'>Liv</a>
+                <a className="nav-logo cssanimation" href='#'>Liv</a>
+                <h1 class="cssanimation sequence rotateXIn">oli</h1>
 
+                
                 <div className='nav-menu' id='nav-menu'>
                     <ul className='nav-list'>
                         <li className='nav-item'>

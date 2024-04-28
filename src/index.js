@@ -1,21 +1,35 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
 import App from './App';
+import GSAP from './GSAP';
+
 import reportWebVitals from './reportWebVitals';
 import { DarkModeContextProvider } from "./context/darkModeContext";
+
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { TextPlugin } from "gsap/TextPlugin"
 
 // Importar los componentes necesarios de FontAwesome
 import { faTwitter, faFontAwesome, faInstagram, faXTwitter, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faMoon, faSun, faHouse, faDiagramProject, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-library.add(faTwitter, faFontAwesome, faInstagram, faXTwitter, faLinkedinIn, faGithub, faMoon, faSun, faHouse, faDiagramProject, faHeart)
+// Register Font Awesome icons
+library.add(
+  faTwitter, faFontAwesome, faInstagram, faXTwitter,
+  faLinkedinIn, faGithub, faMoon, faSun, faHouse,
+  faDiagramProject, faHeart
+);
+
+gsap.registerPlugin(useGSAP, TextPlugin);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <DarkModeContextProvider>
       <App />
+      <GSAP/>
     </DarkModeContextProvider>
   </React.StrictMode>
 );

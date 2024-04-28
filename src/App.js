@@ -12,6 +12,7 @@ import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 
+//scroll to 400 pixels down from the top
 //browserroute rnos permite
 function App() {
   const { darkMode } = useContext(DarkModeContext);
